@@ -1,0 +1,11 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_login:
+    path: /api/login
+    methods: [POST]
+    defaults:
+        _controller: lexik_jwt_authentication.controller.authentication::getToken
